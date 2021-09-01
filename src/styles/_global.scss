@@ -6,6 +6,9 @@ body {
 	color: var(--text);
 }
 main {
+	background-image: url('../images/main_bg.png');
+	width: 100%;
+	min-height: 450px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -13,4 +16,7 @@ main {
 }
 button {
 	font-size: 18px;
+}
+ul {
+	list-style: url(../images/fb_2.svg);
 }
