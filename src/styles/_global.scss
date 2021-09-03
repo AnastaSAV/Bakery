@@ -1,20 +1,35 @@
+@use "fonts";
 @use "variables";
+@use "mixins";
+
 body {
 	margin: 0;
 	background-color: variables.$bg;
-	font-size: 28px;
+	font-size: 25px;
 	color: var(--text);
 }
+h1 {
+	font-family: variables.$ff3;
+	font-weight: 400;
+	font-size: 48px;
+	text-align: center;
+}
 main {
-	background-image: url('../images/main_bg.png');
-	width: 100%;
+	font-family: variables.$ff2;
+	font-weight: 700;
+	font-size: 32px;
 	min-height: 450px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	img {
+		width: 100%;
+		display: block;
+	}
 }
 button {
+	font-family: variables.$ff2;
 	font-size: 18px;
 }
 ul {

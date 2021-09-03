@@ -1,0 +1,52 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.ttf") format("ttf");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+	}
+
+	@font-face {
+	font-family: "PlayfairDisplay";
+	font-display: swap;
+	src: url("../fonts/PlayfairDisplay-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: bold;
+ }
+  
+ @font-face {
+	font-family: "Roboto";
+	font-display: swap;
+	src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: "Alegreya";
+	font-display: swap;
+	src: url("../fonts/Alegreya-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: "Alegreya";
+	font-display: swap;
+	src: url("../fonts/Alegreya-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+ }
+ @font-face {
+	font-family: "DancingScript";
+	font-display: swap;
+	src: url("../fonts/DancingScript-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+ }
+ 	@include font("PlayfairDisplay", "PlayfairDisplay-Bold", "700", "bold");
+	@include font("Roboto", "Roboto-Regular", "400", "normal");
+	@include font("Alegreya", "Alegreya-Regular", "400", "normal");
+	@include font("Alegreya", "Alegreya-Bold", "700", "normal");
+	@include font("DancingScript", "DancingScript-Regular", "400", "normal");
