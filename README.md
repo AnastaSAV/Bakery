@@ -4,6 +4,6 @@ To start work you must have the current version npm and node (node v16.6.1 and n
 To install Webpack 5 into project-folder run - $ npm i -D webpack webpack-cli
 
 Configurations:
- $ npm start - starting dev-server
- $ npm run build - production mode
- $ npm run build-dev - development mode
+<br> $ npm start - starting dev-server
+<br> $ npm run build - production mode
+<br> $ npm run build-dev - development mode
