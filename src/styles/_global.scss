@@ -114,6 +114,9 @@
 	flex: 0 0 50%;
 	max-width: 50%;
 	height: 250px;
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
 	img {
 		width: 295px;
 		object-fit: cover;
