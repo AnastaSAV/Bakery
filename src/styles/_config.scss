@@ -133,14 +133,3 @@ svg {
 	color: #fff;
 	cursor: pointer;
 }
-.slider {
-
-	&__item {
-		display: flex;
-		flex: 0 0 950px;
-		max-width: 950px;
-		align-items: center;
-		justify-content: center;
-		background-color: #fff;
-	}
-}
