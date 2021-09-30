@@ -9,15 +9,25 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-inner">
-				<a href="index.html" class="header-logo">Gustoso</a>
-				<nav class="nav-menu">
-					<ul class="menu-list">
-						<li class="menu-list_item">welcome</li>
-						<li class="menu-list_item">menu</li>
-						<li class="menu-list_item">reservations</li>
-						<li class="menu-list_item">news</li>
-						<li class="menu-list_item">contact</li>
+			<div class="header__inner">
+				<a href="index.html" class="header__logo">Gustoso</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">welcome</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">menu</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">reservations</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">news</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">contact</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="solial-menu">
@@ -36,11 +46,11 @@
 	</header>
 	<section class="main-page">
 		<div class="container">
-			<div class="main-page_inner">
+			<div class="main-page__inner">
 			</div>
-			<div class="main-page_content">
-				<h1 class="main-page_title">Pastry with love</h1>
-				<h3 class="main-page_subtitle">We’re bringing you fresh ingredients every<br>
+			<div class="main-page__content">
+				<h1 class="main-page__title">Pastry with love</h1>
+				<h3 class="main-page__subtitle">We’re bringing you fresh ingredients every<br>
 					day in ways you can’t resist.</h3>
 					<button class="button">Our menu</button>
 				</div>
@@ -48,31 +58,135 @@
 		</section>
 		<main class="main">
 			<div class="container-fluid">
-				<div class="wrapper">
-					<div class="wrapper-item">
-						<h4 class="item-title">Art of cakes</h4>
-						<p class="item-subtitle">we create delicious memories</p>
-						<p class="item-text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
-						
-					</div>
-					<div class="wrapper-item">
-						<div class="img-container">
-							<div class="img-item">
-								<img src="./images/item_img_1.png" alt="">
-							</div>
-							<div class="img-item">
-								<img src="./images/item_img_2.png" alt="">
-							</div>
-							<div class="img-item">
-								<img src="./images/item_img_3.png" alt="">
-							</div>
-							<div class="img-item">
-								<img src="./images/item_img_4.png" alt="">
+				<div class="cakes wrapper">
+					<div class="cakes__item wrapper__item">
+						<div class="cakes__header item-header">
+							<h4 class="cakes__title item-header__title">Art of cakes</h4>
+							<p class="cakes__subtitle item-header__subtitle">we create delicious memories</p>
+							<p class="cakes__text item-header__text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+						</div>
+						<p class="cakes__paragraph">Chef Cook</p>
+						<div class="cakes__content">
+							<p class="cakes__author">Benito</p>
+							<img src="./images/cakes_icon.png" alt="icon" class="cakes__icon">
+							<p class="cakes__author">Gaspare</p>
+						</div>
+						<blockquote class="cakes__quote">Unique creations for unique<br>
+							occasions.</blockquote>
+						</div>
+						<div class="cakes__item  wrapper__item">
+							<div class="cakes__images">
+								<h5 class="cakes__images_title item__text">TASTES SO<br> 
+									GOOD!</h5>
+									<div class="cakes__image">
+										<img src="./images/item_img_1.png" alt="">
+									</div>
+									<div class="cakes__image">
+										<img src="./images/item_img_2.png" alt="">
+									</div>
+									<div class="cakes__image">
+										<img src="./images/item_img_3.png" alt="">
+									</div>
+									<div class="cakes__image">
+										<img src="./images/item_img_4.png" alt="">
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</main>
-	</body>
-	</html>
+				</main>
+				<section class="section-slider">
+					<div class="container-fluid">
+						<div class="slider wrapper swiper">
+							<div class="slider__item">
+								<div class="slider__image">
+									<img src="./images/slider/01.png" alt="slider image">
+								</div>
+								<div class="slider__content wrapper__item">
+									<div class="slider__header item-header">
+										<h4 class="slider__title item-header__title">Tasty pancakes</h4>
+											<p class="slider__subtitle item-header__subtitle">season favourite</p>
+											<p class="slider__text item-header__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+											<button type="button" class="slider__button">
+												<span class="slider__button_item">
+												</span>
+											</button>
+									</div>
+									<div class="slider__info info-slider">
+										<span class="info-slider__text_1">ready in</span>
+										<span class="info-slider__text_2">40</span>
+										<span class="info-slider__text_3">mins</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__image">
+									<img src="./images/slider/02.jpg" alt="slider image">
+								</div>
+								<div class="slider__content wrapper__item">
+									<div class="slider__header item-header">
+										<h4 class="slider__title item-header__title">Tasty pancakes</h4>
+											<p class="slider__subtitle item-header__subtitle">season favourite</p>
+											<p class="slider__text item-header__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+											<button type="button" class="slider__button">
+												<span class="slider__button_item">
+												</span>
+											</button>
+									</div>
+									<div class="slider__info info-slider">
+										<span class="info-slider__text_1">ready in</span>
+										<span class="info-slider__text_2">40</span>
+										<span class="info-slider__text_3">mins</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__image">
+									<img src="./images/slider/03.jpg" alt="slider image">
+								</div>
+								<div class="slider__content wrapper__item">
+									<div class="slider__header item-header">
+										<h4 class="slider__title item-header__title">Tasty pancakes</h4>
+											<p class="slider__subtitle item-header__subtitle">season favourite</p>
+											<p class="slider__text item-header__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+											<button type="button" class="slider__button">
+												<span class="slider__button_item">
+												</span>
+											</button>
+									</div>
+									<div class="slider__info info-slider">
+										<span class="info-slider__text_1">ready in</span>
+										<span class="info-slider__text_2">40</span>
+										<span class="info-slider__text_3">mins</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__image">
+									<img src="./images/slider/04.jpg" alt="slider image">
+								</div>
+								<div class="slider__content wrapper__item">
+									<div class="slider__header item-header">
+										<h4 class="slider__title item-header__title">Tasty pancakes</h4>
+											<p class="slider__subtitle item-header__subtitle">season favourite</p>
+											<p class="slider__text item-header__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+											<button type="button" class="slider__button">
+												<span class="slider__button_item">
+												</span>
+											</button>
+									</div>
+									<div class="slider__info info-slider">
+										<span class="info-slider__text_1">ready in</span>
+										<span class="info-slider__text_2">40</span>
+										<span class="info-slider__text_3">mins</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider__dotts"></div>
+						<div class="slider__more more__item_next"></div>
+						<div class="slider__more more__item_prev"></div>
+					</div>
+				</section>
+			</body>
+			</html>

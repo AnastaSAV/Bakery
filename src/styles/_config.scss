@@ -72,7 +72,7 @@ svg {
 	display: flex;
 	flex-wrap: nowrap;
 	flex: 0 0 100%;
-	&-item {
+	&__item {
 		display: flex;
 		flex: calc(100% / 2);
 		max-width: calc(100% / 2);
@@ -81,31 +81,43 @@ svg {
 		text-align: center;
 	}
 }
-.item-title {
-	font-family: variables.$ff;
-	font-size: 48px;
-	line-height: 30px;
-	font-weight: 700;
-	letter-spacing: 0.025em;
-	color: variables.$tcolor;
-	margin-bottom: 15px;
+.item-header {
+	
+	&__title {
+		font-family: variables.$ff;
+		font-size: 48px;
+		line-height: 30px;
+		font-weight: 700;
+		letter-spacing: 0.025em;
+		color: variables.$tcolor;
+	}
+	&__subtitle {
+		font-family: variables.$ff;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #a47d5e;
+	}
+	&__text {
+		font-family: variables.$ff2;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		color: variables.$tcolor;
+	}
 }
-.item-subtitle {
+.item__text {
 	font-family: variables.$ff;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: #a47d5e;
-}
-.item-text {
-	font-family: variables.$ff2;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 30px;
+	line-height: 36px;
 	font-weight: 400;
-	letter-spacing: 0.1em;
-	color: variables.$tcolor;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #c9b176;
 }
+
 .button {
 	display: flex;
 	justify-content: center;
@@ -120,4 +132,15 @@ svg {
 	letter-spacing: 0.3em;
 	color: #fff;
 	cursor: pointer;
+}
+.slider {
+
+	&__item {
+		display: flex;
+		flex: 0 0 950px;
+		max-width: 950px;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+	}
 }
