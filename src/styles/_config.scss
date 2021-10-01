@@ -51,6 +51,7 @@ a {
 img {
 	max-width: 100%;
 	display: block;
+	pointer-events: none;
 }
 svg {
 	display: inline;
@@ -82,7 +83,6 @@ svg {
 	}
 }
 .item-header {
-	
 	&__title {
 		font-family: variables.$ff;
 		font-size: 48px;
@@ -132,4 +132,27 @@ svg {
 	letter-spacing: 0.3em;
 	color: #fff;
 	cursor: pointer;
+}
+.menu__btn {
+	display: flex;
+	justify-content: center;
+	padding: 15px 65px;
+	border: 1px solid #9e9c93;
+	background-color: transparent;
+	font-family: variables.$ff;
+	font-size: 16.5px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #a47d5e;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+	&:hover {
+		background-color: variables.$tcolor;
+		opacity: .6;
+		color: #e49b60;
+	}
+}
+.dollar::before {
+	content: '$';
 }
