@@ -58,49 +58,7 @@
 		margin-bottom: 70px;
 	}
 }
-// Header
-.header {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	background-color: rgba(86,83,76,0.52);
-	&__inner {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		font-family: variables.$ff;
-		font-weight: 400;
-		font-size: 14px;
-		color: #fff;
-		margin: auto;
-		padding: 20px 0;
-	}
-	&__logo {
-		font-family: variables.$ff4;
-		font-weight: 400;
-		font-size: 60px;
-	}
-}
-// Menu
-.menu {
-	&__list {
-		display: flex;
-		font-family: variables.$ff;
-		font-weight: 400;
-		letter-spacing: .3em;
-		text-transform: uppercase;
-	}
-	&__item {
-		&:not(:last-child) {
-			margin-right: 85px;
-		}
-	}
-}
-.social-menu {
-	display: flex;
-}
+
 // Intro 
 .main {
 	background-image: url('../images/intro_bg.png');
@@ -229,4 +187,3 @@
 		}
 	}
 }
-
